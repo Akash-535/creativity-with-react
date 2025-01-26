@@ -1,0 +1,8 @@
+.common-transition {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+@media (max-width: 1023.98px) {
+  .fanta-can {
+    width: 40%;
+  }
+}
