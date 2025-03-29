@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { HEADER_LIST } from "../utils/helper";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -41,9 +42,12 @@ const Header = () => {
             About More
           </button>
         </div>
-        <button className="max-lg:hidden py-3 px-4 border border-white rounded-xl text-white text-xl font-bold cursor-pointer hover:bg-white hover:text-orange-400 duration-300 ease-linear">
+        <Link
+          to="/creativity-two"
+          className="max-lg:hidden py-3 px-4 border border-white rounded-xl text-white text-xl font-bold cursor-pointer hover:bg-white hover:text-orange-400 duration-300 ease-linear"
+        >
           About More
-        </button>
+        </Link>
         <div
           onClick={handleClick}
           className="z-[15] flex-col gap-1 lg:hidden flex cursor-pointer"
