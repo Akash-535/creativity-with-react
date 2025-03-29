@@ -26,6 +26,7 @@ const Header = () => {
         >
           {HEADER_LIST.map((obj, i) => (
             <a
+              key={i}
               onClick={closeHandler}
               href="#"
               className="text-xl text-white font-medium hover:scale-105 ease-linear duration-300"

@@ -1,10 +1,17 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import CreativityOne from "./components/creativity-one/CreativityOne";
+import CreativityTwo from "./components/creativity-two/CreativityTwo";
 
 function App() {
   return (
     <>
-      <CreativityOne />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<CreativityOne />} />
+          <Route path="/creativity-two" element={<CreativityTwo />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
